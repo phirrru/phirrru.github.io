@@ -8,21 +8,7 @@ body {
 }
 
 
-/* МЕДИАЗАПРОС */
-@media (max-width: 730px) {
-    header {
-        /* font-size: 130%; */
-        flex-direction: column;
-        text-align: center;
-        justify-content: space-around;
-    }
 
-    nav {
-        align-self: center;
-        font-size: 50%;
-    }
-}
-/* КОНЕЦ МЕДИАЗАПРОСА */
 
 /* СЛАЙДЕР */
 #slider{
@@ -225,6 +211,22 @@ nav a:hover {
     background:#31572c;
 	color: #ffffff;
 }
+
+/* МЕДИАЗАПРОС */
+@media (max-width: 730px) {
+    header {
+        /* font-size: 130%; */
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    nav {
+        align-self: center;
+        font-size: 50%;
+    }
+}
+/* КОНЕЦ МЕДИАЗАПРОСА */
 
 section {
     float: left;
