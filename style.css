@@ -48,11 +48,13 @@ body {
     float: left;
     background: rgb(177, 241, 155);
     border-radius: 20px;
-    
+    box-shadow: inset 0 0 0 0,
+    0px 0px 18px 8px rgba(0,0,0,0.61);
 }
 
 .centering {
     margin-top: 20px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
