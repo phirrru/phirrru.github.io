@@ -229,13 +229,14 @@ nav a:hover {
 /* КОНЕЦ МЕДИАЗАПРОСА */
 
 section {
-    float: left;
-    width: 90%;
-    margin-left: 3%;
+    /* float: left; */
+    width: 80%;
+    /* margin-right: 20%; */
 }
 
 .sec1 {
-    float: left;
+    /* float: left; */
+    display: inline-block;
     border: solid;
     border-color: rgb(26, 124, 41);
     padding: 10px;
@@ -253,9 +254,12 @@ section {
     
 }
 .main_cont {
+    max-width: 100%;
+    max-height: 100%;
     position: relative;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
+    margin-left: 15%;
 }
 
 
