@@ -185,8 +185,7 @@ header {
 
     background-image: url("headerback.jpg");
     background-repeat: no-repeat;
-/* 
-    height: min-content; */
+    
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -10px;
@@ -217,8 +216,8 @@ nav a:hover {
     header {
         /* font-size: 130%; */
         flex-direction: column;
-        text-align: center;
-        justify-content: space-around;
+        /* text-align: center; */
+        /* justify-content: space-around; */
     }
 
     nav {
