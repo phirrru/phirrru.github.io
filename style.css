@@ -19,7 +19,7 @@ body {
 
     nav {
         align-self: center;
-        font-size: 10%;
+        font-size: 50%;
     }
 }
 /* КОНЕЦ МЕДИАЗАПРОСА */
@@ -194,7 +194,7 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
     background-image: url("headerback.jpg");
