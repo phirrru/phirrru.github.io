@@ -234,6 +234,12 @@ section {
     /* margin-right: 20%; */
 }
 
+
+.sec3 {
+    float: left;
+    width: 95%;
+    /* margin-right: 20%; */
+}
 .sec1 {
     /* float: left; */
     display: inline-block;
