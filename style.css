@@ -8,6 +8,22 @@ body {
 }
 
 
+/* МЕДИАЗАПРОС */
+@media (max-width: 730px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .menu{
+        align-self: center;
+    }
+    .menu > a{
+        font-size: 15px;
+    }
+}
+/* КОНЕЦ МЕДИАЗАПРОСА */
+
 /* СЛАЙДЕР */
 #slider{
     overflow: hidden;
