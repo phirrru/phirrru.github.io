@@ -236,9 +236,10 @@ section {
 
 
 .sec3 {
-    float: left;
-    width: 95%;
-    /* margin-right: 20%; */
+    /* float: left; */
+    width: 94%;
+    /* margin-right: 10%; */
+    margin-left: 3%;
 }
 .sec1 {
     /* float: left; */
