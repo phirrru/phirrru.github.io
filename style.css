@@ -84,8 +84,132 @@ body {
     background: url("https://raw.githubusercontent.com/bedimcode/responsive-plants-website/main/assets/img/product5.png");
 }
 /* КОНЕЦ СЛАЙДЕРА */
+/* 
+.timer{
+    grid-area: timer;
+} */
+
+u {
+    font-family: monospace;
+    font-size: 140%;
+}
+
+.mails{
+    grid-area: mails;
+    display: flex;
+    /* justify-content: center; */
+    width: 70%;
+    margin-left: 15%;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.countdown{
+    grid-area: countdown;
+
+}
+
+.review{
+    grid-area: review;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.head{
+    grid-area: head;
+    width: 70%;
+    margin-left: 15%;
+}
 
 
+
+/* размещаем блоки с контентом последовательно, с помощью grid */
+main{
+    width: 100%;
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas:
+    "head"
+    "review"
+    "countdown"
+    "mails";
+}
+
+
+
+/* COUNTDOWN */
+.countdown {
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .countdown-number {
+    padding: 10px;
+    /* border-radius: 15px; */
+    background: #c5ff8f;
+    display: inline-block;
+  }
+  
+  .countdown-time {
+    color:snow;
+    padding: 15px;
+    /* border-radius: 15px; */
+    background: #094d0f;
+    display: inline-block;
+  }
+  
+  .countdown-text {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+/* задаём поведение на мобильном устройстве */
+  @media (max-width: 730px) {
+      .countdown{
+          font-size: 15px;
+      }
+      .countdown-text{
+          font-size: 10px;
+      }
+  }
+
+/* COUNTDOWN END */
+
+.contact_box {
+    /* margin-right: 5px; */
+    border-radius: 10px;
+    width: 160px;
+    height: 50px;
+    background: rgb(192,252,153);
+}
+/* .timer_cont {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    /* margin-top: 20px; */
+/* } */ 
+
+.contact_style {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    /* align-items: center; */
+}
+
+.contact_h1 {
+    position: fixed;
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 200%;
+    color:rgb(2, 14, 1)
+}
 
 .hh1 {
     margin-top: 20px;

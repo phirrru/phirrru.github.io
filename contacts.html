@@ -7,6 +7,7 @@
         <title>Houseplants</title>
         <link rel="shortcut icon" href="cactus.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+        <script src="jquery.js"></script>
     </head>
     <body>
         <header>
@@ -17,7 +18,52 @@
                 <nav><a href="types.html">Виды растений</a></nav>
                 <nav><a href="contacts.html">О сайте</a></nav>
         </header>
-    
+    <main>
+
+            <!-- <div class="countdown"><h2><center>О сайте</center></h2></div> -->
+
+            <div class="head">
+                <center><div class="countdown"><h2>О нас</h2></div></center>
+                <center><p>Добро пожаловать на сайт Houseplants»! Наш сайт посвящен домашним растениям и цветам, и создан для всех, кто увлекается растениеводством! Нам очень важна обратная связь, поэтому будем признательны, если Вы оставите свой отзыв в расположенной ниже форме, чтобы мы могли становиться лучше с каждым днем:</p></center>
+            </div>
+
+        <div class="mails">
+            <div class="countdown"><h2><center>Наши контакты</center></h2></div>
+            <center><u>Номер телефона: +7-(903)-200-70-13</u></center>
+            <center><u>Почта: phiru@inbox.ru</u></center>
+            <center><u>Telegram: @qurmathe</u></center>
+        </div>
+
         
+        <div class="review">
+            <textarea rows="10" cols="45" id="textarea1" placeholder="Введите отзыв"></textarea>
+            <br><br>
+            <button id="send">Отправить отзыв</button>
+        </div>
+
+
+            <div id="countdown" class="countdown">
+                <h2>Оставьте отзыв до конца года!</h2>
+                <div class="countdown-number">
+                  <span class="days countdown-time"></span>
+                  <span class="countdown-text">Дни</span>
+                </div>
+                <div class="countdown-number">
+                  <span class="hours countdown-time"></span>
+                  <span class="countdown-text">Часы</span>
+                </div>
+                <div class="countdown-number">
+                  <span class="minutes countdown-time"></span>
+                  <span class="countdown-text">Минуты</span>
+                </div>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time"></span>
+                  <span class="countdown-text">Секунды</span>
+                </div>
+            </div>
+    <!-- </div> -->
+    </main>
+
+        <script src="script.js"></script>
     </body>
 </html>
