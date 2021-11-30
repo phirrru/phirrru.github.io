@@ -401,6 +401,11 @@ section {
     height: auto;
 }
 
+.responsive2 {
+    width: 30%;
+    height: auto;
+}
+
  .clear-left {
     clear: left;
 } 
