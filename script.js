@@ -1,5 +1,5 @@
-// функция для получения оставшегося времени
-function getTimeRemaining(endtime) {
+// получение оставшегося времени
+function getLeftTime(endtime) {
     var time = Date.parse(endtime) - Date.parse(new Date());
     var seconds = Math.floor((time / 1000) % 60);
     var minutes = Math.floor((time / 1000 / 60) % 60);
@@ -14,16 +14,17 @@ function getTimeRemaining(endtime) {
     };
   }
   
-  // функция для создания часов
-  function initializeClock(id, deadline) {
+  // создание таймера
+  function CreateTimer(id, date_needed) {
     var clock = document.getElementById(id);
     var daysSpan = clock.querySelector('.days');
     var hoursSpan = clock.querySelector('.hours');
     var minutesSpan = clock.querySelector('.minutes');
     var secondsSpan = clock.querySelector('.seconds');
-    // функция для обновления часов
-    function updateClock() {
-      var time = getTimeRemaining(deadline);
+
+    // обновление времени
+    function updateTime() {
+      var time = getLeftTime(date_needed);
    
       daysSpan.innerHTML = time.days;
       hoursSpan.innerHTML = ('0' + time.hours).slice(-2);
@@ -35,9 +36,9 @@ function getTimeRemaining(endtime) {
       }
     }
    
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
+    updateTime();
+    var timeinterval = setInterval(updateTime, 1000);
   }
    
-  var deadline = '2021-12-31';
-  initializeClock('countdown', deadline);
+  var date_needed = '2021-12-31';
+  CreateTimer('countdown', date_needed);
